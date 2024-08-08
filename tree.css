@@ -1,0 +1,24 @@
+.node circle {
+    stroke: #000;
+    stroke-width: 3px;
+}
+
+.node text {
+    font: 12px sans-serif;
+}
+
+.link {
+    fill: none;
+    stroke: #555;
+    stroke-width: 1.5px;
+}
+
+.control-panel {
+    margin-bottom: 20px;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}

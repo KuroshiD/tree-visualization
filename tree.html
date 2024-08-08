@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="tree.css">
+</head>
+
+<body>
+    <div class="control-panel">
+        <input type="number" id="nodeValue" placeholder="Enter node value">
+        <select id="treeType">
+            <option value="red-black">Red-Black Tree</option>
+            <option value="binary">Binary Search Tree</option>
+            <option value="avl">AVL Tree</option>
+        </select>
+        <button onclick="insertNode()" id="insertBtn">Insert Node</button>
+        <button onclick="resetTree()">Reset Tree</button>
+        <br><br>
+        <input type="number" id="searchValue" placeholder="Search node value">
+        <button onclick="startSearch()">Search Node</button>
+        <button id="prevBtn" onclick="prevStep()" disabled>Prev</button>
+        <button id="nextBtn" onclick="nextStep()" disabled>Next</button>
+        <button id="skipBtn" onclick="skipSearch()" disabled>Skip</button>
+        <div id="feedback"></div>
+    </div>
+    <script src="tree.js"></script>
+</body>
+
+</html>
